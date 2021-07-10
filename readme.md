@@ -2,6 +2,8 @@
 
 Starter files for a Hugo theme with Windi CSS.
 
+[Preview example site *(on Netlify)*](https://hugo-theme-windicss-starter.netlify.app/)
+
 - set up to use [Windi CSS](https://windicss.org) - v3.1+
 - includes the [typography](https://windicss.org/plugins/official/typography.html) plugin for styling of markdown content
 - use [Windi CSS CLI](https://windicss.org/integrations/cli.html) integration to build optimized windi.css with only used class directives, circumventing the need to purge.

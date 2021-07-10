@@ -75,7 +75,7 @@
   }
   
 html.dark {
-  --c-brand: hsl(203.1, 95.8%, 56.4%);
+  --c-brand: hsl(203.1, 65.8%, 60.4%);
   --c-brand-highlight: hsla(203, 66%, 45%, 0.6);
 
   --c-bg: #171717;
