@@ -4,15 +4,18 @@
   "description": "A Hugo starter theme with WindiCSS",
   "main": "index.js",
   "scripts": {
-    "windi:dev": "windicss -mto themes/hugo-theme-windicss-starter/assets/css/windi.css --config windi.config.js --dev",    
+    "windi:dev": "windicss -mto themes/hugo-theme-windicss-starter/assets/css/windi.css --config windi.config.js --dev",
     "windi": "windicss -mto themes/hugo-theme-windicss-starter/assets/css/windi.css --config windi.config.js",
     "hugo:dev": "hugo server -DF",
     "hugo": "hugo --gc --minify",
     "dev": "run-p windi:dev hugo:dev",
     "build": "run-s windi hugo",
     "example": "run-p windi:example hugo:example",
-    "windi:example": "windicss -mto ../assets/css/windi.css --config windi.config.js --dev",    
-    "hugo:example": "hugo server -s ./ -DF --disableFastRender --themesDir=../.." 
+    "windi:example": "windicss -mto ../assets/css/windi.css --config windi.config.js --dev",
+    "hugo:example": "hugo server -s ./ -DF --disableFastRender --themesDir=../..",
+    "build:example": "run-s windi:build:example hugo:build:example",
+    "windi:build:example": "windicss -mto ../assets/css/windi.css --config windi.config.js",
+    "hugo:build:example": "hugo --gc -s ./ --themesDir=../.."
   },
   "repository": {
     "type": "git",
