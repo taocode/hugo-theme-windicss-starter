@@ -17,10 +17,11 @@ This theme is a starter setup theme to aid in developing Hugo themes using the W
 
 ## Try before you buy
 
-Start a server to develop with `exampleSite`
+Check out the `exampleSite` it has samples and instructions on the homepage:
 
 ```bash
 cd themes/hugo-theme-windicss-starter/exampleSite
+npm install
 npm run dev
 ```
 
