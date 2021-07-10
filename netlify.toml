@@ -1,0 +1,5 @@
+# [build]
+#   command = "npm i && npm build:example"
+
+[build.environment]
+  HUGO_VERSION = "0.80.0"
