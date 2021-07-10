@@ -3,6 +3,11 @@
   /**
    * Colors
    * --------------------------------------------------------------------- */
+  --c-brand: hsl(203.1, 95.8%, 36.4%);
+  --c-brand-highlight: hsla(203.1, 85.8%, 61.4%, 0.35);
+  --c-brand-active: #0e8fc9;
+  --c-brand-dark: #0e8fc9;
+  --c-brand-light: #25b3f5;
   --c-bg: #fff;
   --c-bg-semi: rgba(255,255,255,0.8);
   --c-bg2: #f3f5f7;
@@ -14,11 +19,6 @@
   --c-text-light-1: #2c3e50;
   --c-text-light-2: #476582;
   --c-text-light-3: #90a4b7;
-  --c-brand: hsl(203.1, 85.8%, 61.4%);
-  --c-brand-highlight: hsla(203.1, 85.8%, 61.4%, 0.35);
-  --c-brand-active: #0e8fc9;
-  --c-brand-dark: #0e8fc9;
-  --c-brand-light: #25b3f5;
   --c-disabled-bg: #e5e5e5;
   --c-disabled-fg: #666;
   --c-code: hsl(221deg 39% 11%);
@@ -60,12 +60,7 @@
   /**
    * Shadows
    * --------------------------------------------------------------------- */
-  
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, .04), 0 1px 2px rgba(0, 0, 0, .06);
-  --shadow-2: 0 3px 12px rgba(0, 0, 0, .07), 0 1px 4px rgba(0, 0, 0, .07);
-  --shadow-3: 0 12px 32px rgba(0, 0, 0, .1), 0 2px 6px rgba(0, 0, 0, .08);
-  --shadow-4: 0 14px 44px rgba(0, 0, 0, .12), 0 3px 9px rgba(0, 0, 0, .12);
-  --shadow-5: 0 18px 56px rgba(0, 0, 0, .16), 0 4px 12px rgba(0, 0, 0, .16);
+
   --shadow-header: 0 6px 10px rgba(var(--shadow-rgb), .06), 0 3px 6px rgba(var(--shadow-rgb), .08);
   --shadow-totop: 0 0 5px 2px rgba(var(--shadow-rgb), .15), 0 0 8px 1px rgba(var(--shadow-rgb), .1);
   /**
@@ -80,6 +75,9 @@
   }
   
 html.dark {
+  --c-brand: hsl(203.1, 95.8%, 56.4%);
+  --c-brand-highlight: hsla(203, 66%, 45%, 0.6);
+
   --c-bg: #171717;
   --c-bg-semi: rgba(17,17,17,0.8);
   --c-bg2: #222;
@@ -93,7 +91,6 @@ html.dark {
   --c-code-highlight: rgba(0, 0, 0, .66);
   --c-disabled-bg: #333;
   --c-disabled-fg: #aaa;
-  --c-brand-highlight: hsla(203, 66%, 45%, 0.6);
 
   --c-gray-100: hsl(216, 14.3%, 4.1%);
   --c-gray-200: hsl(216, 13%, 9%);
