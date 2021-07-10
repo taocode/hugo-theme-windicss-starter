@@ -22,7 +22,7 @@ Check out the `exampleSite` it has samples and instructions on the homepage:
 ```bash
 cd themes/hugo-theme-windicss-starter/exampleSite
 npm install
-npm run dev
+npm run example
 ```
 
 ## Prerequisites

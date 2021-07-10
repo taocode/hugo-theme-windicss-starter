@@ -34,9 +34,11 @@ I've found WindiCSS to be faster than TailwindCSS, JIT or otherwise. WindiCSS ad
 
 ## Example Site
 
+Try before you buy!
+
 1. `cd themes/hugo-theme-windicss-starter/exampleSite`
 1. `pnpm install` *(or `npm install`, `yarn install`)*
-1. `pnpm dev` *(or `npm run dev`, `yarn dev`)*
+1. `pnpm example` *(or `npm run example`, `yarn example`)*
 
 ## Installation
 
