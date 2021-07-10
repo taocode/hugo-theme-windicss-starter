@@ -1,6 +1,6 @@
 [build]
   base = "themes/hugo-theme-windicss-starter/exampleSite"
-  publish = "themes/hugo-theme-windicss-starter/exampleSite/public"
+  publish = "public"
   command = "npm install && npm run build:example"
 
 [build.environment]
