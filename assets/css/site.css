@@ -1,3 +1,24 @@
-.starter {
-  color: blue;
+/* Selection color */
+::selection {
+  background-color: var(--c-brand-highlight);
+}
+
+/* menu toggle  */
+input#show-menu:checked~#toggle-menu .menu-open {
+  display: none;
+}
+input#show-menu:checked~#nav-menu  {
+  display: flex;
+  flex: flex-wrap;
+}
+input#show-menu:checked~#toggle-menu .menu-close {
+  display: block;
+}
+
+/* dark mode toggle */
+.dark #toggle-dark-mode .mode-dark {
+  display: block;
+}
+.dark #toggle-dark-mode .mode-light {
+  display: none;
 }

@@ -1,0 +1,37 @@
+{
+  "name": "hugo-theme-windicss-starter",
+  "version": "1.0.0",
+  "description": "A Hugo starter theme with WindiCSS",
+  "main": "index.js",
+  "scripts": {
+    "windi:dev": "windicss -mto themes/hugo-theme-windicss-starter/assets/css/windi.css --config windi.config.js --dev",    
+    "windi": "windicss -mto themes/hugo-theme-windicss-starter/assets/css/windi.css --config windi.config.js",
+    "hugo:dev": "hugo server -DF",
+    "hugo": "hugo --gc --minify",
+    "dev": "run-p windi:dev hugo:dev",
+    "build": "run-s windi hugo",
+    "example": "run-p windi:example hugo:example",
+    "windi:example": "windicss -mto ../assets/css/windi.css --config windi.config.js --dev",    
+    "hugo:example": "hugo server -s ./ -DF --disableFastRender --themesDir=../.." 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taocode/hugo-theme-windicss-starter.git"
+  },
+  "keywords": [
+    "hugo",
+    "windicss",
+    "template",
+    "starter"
+  ],
+  "author": "taocode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taocode/hugo-theme-windicss-starter/issues"
+  },
+  "homepage": "https://github.com/taocode/hugo-windicss-starter#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "windicss": "^3.1.4"
+  }
+}

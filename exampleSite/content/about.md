@@ -1,12 +1,12 @@
 ---
-author: Dirk Olbrich
+author: Mark Jones
 title: About
-date: 2019-05-13
+date: 2021-05-13
 description: A short description about me.
 keywords: [about, creator]
 type: about
 ---
 
-Hugo Starter Theme for Tailwindcss.
+Hugo Starter Theme for WindiCSS.
 
-Made by [me](https://github.com/dirkolbrich/).
+Made by [taocode](https://github.com/taocode/).
