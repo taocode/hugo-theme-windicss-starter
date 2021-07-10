@@ -1,7 +1,7 @@
 [build]
   base = "themes/hugo-theme-windicss-starter/exampleSite"
   publish = "themes/hugo-theme-windicss-starter/exampleSite/public"
-  command = "npm i && npm build:example"
+  command = "npm install && npm run build:example"
 
 [build.environment]
   HUGO_VERSION = "0.80.0"
