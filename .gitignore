@@ -1,7 +1,7 @@
-/node_modules
-/exampleSite/public
-/exampleSite/hugo_stats.json
+**/node_modules
+**/exampleSite/public
+**/exampleSite/hugo_stats.json
 .pnpm-debug.log
-
 **/assets/css/windi.css
+# Local Netlify folder
 .netlify
