@@ -21,7 +21,8 @@ Start a server to develop with `exampleSite`
 
 ```bash
 cd themes/hugo-theme-windicss-starter/exampleSite
-npm run dev
+npm install
+npm run example
 ```
 
 ## Prerequisites
