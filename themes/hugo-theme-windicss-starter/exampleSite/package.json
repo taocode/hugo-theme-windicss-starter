@@ -15,7 +15,7 @@
     "hugo:example": "hugo server -s ./ -DF --disableFastRender --themesDir=../..",
     "build:example": "run-s windi:build:example hugo:build:example",
     "windi:build:example": "windicss -mto ../assets/css/windi.css --config windi.config.js",
-    "hugo:build:example": "hugo --gc -s ./ --themesDir=.."
+    "hugo:build:example": "hugo --gc -s ./ --themesDir=../.."
   },
   "repository": {
     "type": "git",
