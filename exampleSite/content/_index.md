@@ -2,6 +2,7 @@
 author: Mark Jones
 title: Hugo WindiCSS Starter
 date: 2021-05-15
+description: Hugo Theme with Windi CSS CLI integration for lightning-fast builds.
 ---
 
 ## 🌫️WindiCSS⚡ Hugo Static Site💨
