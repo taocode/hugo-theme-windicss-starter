@@ -1,15 +1,15 @@
-# Hugo Starter Theme with WindiCSS
+# Hugo Starter Theme with Windi CSS
 
-Starter files for a Hugo theme with WindiCSS.
+Starter files for a Hugo theme with Windi CSS.
 
-- set up to use [WindiCSS](https://windicss.org) - v3.1+
+- set up to use [Windi CSS](https://windicss.org) - v3.1+
 - includes the [typography](https://windicss.org/plugins/official/typography.html) plugin for styling of markdown content
-- use [WindiCSS CLI](https://windicss.org/integrations/cli.html) integration to build optimized windi.css with only used class directives, circumventing the need to purge.
+- use [Windi CSS CLI](https://windicss.org/integrations/cli.html) integration to build optimized windi.css with only used class directives, circumventing the need to purge.
 - works as separate theme repo or as a local theme folder within a Hugo site
 - exampleSite uses basic template setup with an index page, an about page and a posts category
 - dark mode toggle
 - responsive navigation header ~~with minimal javascript~~ with pure css to hide the nav on small screens
-- included helper partials to show Hugo parameters and WindiCSS breakpoints during development
+- included helper partials to show Hugo parameters and Windi CSS breakpoints during development
 
 ## What this theme is NOT
 
@@ -107,7 +107,7 @@ Your content should go into `new-site/content`, the development of the site layo
 Included are the following helpers for the development phase (not visible in production):
 
 - `/partials/dev-parameters.html`, which shows basic Hugo page parameters
-- `/partials/dev-size-indicator.html`, which displays a floating circle in the upper right corner to indicate the WindiCSS responsive breakpoints
+- `/partials/dev-size-indicator.html`, which displays a floating circle in the upper right corner to indicate the Windi CSS responsive breakpoints
 
 If you don't need any of these helpers anymore, just delete the corresponding line from `/layouts/_default/baseof.html`.
 
@@ -135,7 +135,7 @@ That is, Netlify doesn't know the `npm` dependencies of this starter theme yet. 
 }
 ```
 
-This introduces the dependencies WindiCSS and PostCSS need, Netlify will run the installation automatically on deploy.
+This introduces the dependencies WindiCSS Netlify will run the installation automatically on deploy, use: `npm run build`.
 
 ### Environment variables
 
