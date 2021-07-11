@@ -24,7 +24,7 @@ I've tried enabling JIT mode to reduce CSS overhead and improve startup time, li
 
 ## Limitations
 
-- ***No @apply*** directives 😔
+- ***No @apply*** directives 😔 but check out [Windi CSS Shortcuts](https://windicss.org/features/shortcuts.html) 😊
 - New pages or layout html may require a restart to catch the new file's class usage *(but that's like 3 seconds so...)*
 
 ## *Speediest!*
@@ -35,7 +35,7 @@ I've found WindiCSS to be faster than TailwindCSS, JIT or otherwise. WindiCSS ad
 
 ## Example Site
 
-Try before you buy!
+Try before you buy! [View on Netlify](https://hugo-theme-windicss-starter.netlify.app/)
 
 1. `cd themes/hugo-theme-windicss-starter/exampleSite`
 1. `pnpm install` *(or `npm install`, `yarn install`)*
