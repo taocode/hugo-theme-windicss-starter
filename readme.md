@@ -2,15 +2,15 @@
 
 Starter files for a Hugo theme with Windi CSS.
 
-[Preview example site *(on Netlify)*](https://hugo-theme-windicss-starter.netlify.app/)
+## [✨Example Site💨 🔗](https://hugo-theme-windicss-starter.netlify.app/)
 
 - set up to use [Windi CSS](https://windicss.org) - v3.1+
-- includes the [typography](https://windicss.org/plugins/official/typography.html) plugin for styling of markdown content
+- includes the [typography](https://windicss.org/plugins/official/typography.html) plugin for styling of markdown content (including dark mode friendly *.prose* color fixes)
 - use [Windi CSS CLI](https://windicss.org/integrations/cli.html) integration to build optimized windi.css with only used class directives, circumventing the need to purge.
 - works as separate theme repo or as a local theme folder within a Hugo site
 - exampleSite uses basic template setup with an index page, an about page and a posts category
 - dark mode toggle
-- responsive navigation header ~~with minimal javascript~~ with pure css to hide the nav on small screens
+- responsive navigation header with ~~pure css~~ *minimal javascript* for 1) dark mode and 2) mobile "hamburger" nav on small screens; *the pure CSS solution to the hamburger menu fails keyboard accessibility.*
 - included helper partials to show Hugo parameters and Windi CSS breakpoints during development
 
 ## What this theme is NOT
@@ -19,7 +19,7 @@ This theme is a starter setup theme to aid in developing Hugo themes using the W
 
 ## Try before you buy
 
-Start a server to develop with `exampleSite`
+Start a local server with `exampleSite` or [see the example site on Netlify](https://hugo-theme-windicss-starter.netlify.app/)
 
 ```bash
 cd themes/hugo-theme-windicss-starter/exampleSite
