@@ -6,7 +6,7 @@ Starter files for a Hugo theme with Windi CSS.
 
 - set up to use [Windi CSS](https://windicss.org) - v3.1+
 - includes the [typography](https://windicss.org/plugins/official/typography.html) plugin for styling of markdown content (including dark mode friendly *.prose* color fixes)
-- use [Windi CSS CLI](https://windicss.org/integrations/cli.html) integration to build optimized windi.css with only used class directives, circumventing the need to purge.
+- use [Windi CSS CLI](https://windicss.org/integrations/cli.html) integration *(no @apply directives, consider using: [Windi CSS Shortcuts](https://windicss.org/features/shortcuts.html))* to build optimized windi.css with used classes *(only)*, circumventing the need to purge.
 - works as separate theme repo or as a local theme folder within a Hugo site
 - exampleSite uses basic template setup with an index page, an about page and a posts category
 - dark mode toggle
@@ -107,7 +107,7 @@ hugo server --disableFastRender
 
 Your content should go into `new-site/content`, the development of the site layout is done within `new-site/themes/new-theme-name/layout`.
 
-## Helpers
+## Developer Mode Helpers
 
 Included are the following helpers for the development phase (not visible in production):
 
@@ -118,26 +118,13 @@ If you don't need any of these helpers anymore, just delete the corresponding li
 
 ## Deploy to Netlify
 
-If you use this starter theme and want to deploy your site to [Netlify](https://www.netlify.com/), you *MAY* encounter a build error which contains the following line:
+If you use this starter theme and want to deploy your site to [Netlify](https://www.netlify.com/), you *MAY* encounter a build error about windicss missing:
 
-```bash
-ERROR {your deploy time here} error: failed to transform resource: POSTCSS: failed to transform "css/styles.css" (text/css): PostCSS not found; install with "npm install postcss-cli". See https://gohugo.io/hugo-pipes/postcss/
-```
-
-That is, Netlify doesn't know the `npm` dependencies of this starter theme yet. For this to fix, please add a `package.json` file to the root of your repo with the content:
+Netlify will need to `npm install` dependencies of this starter. Please copy the `exampleSite/package.json` and `exampleSite/windi.config.js` file to the root of your project:
 
 ```json
-{
-    "name": "my-site",
-    "version": "0.0.1",
-    "description": "that is my-site",
-    "repository": "https://github.com/you/my-site",
-    "license": "MIT",
-    "devDependencies": {
-        "npm-run-all": "^4.1.5",
-        "windicss": "^3.1.4"
-    }
-}
+cp themes/hugo-theme-windicss-starter/exampleSite/package.json ./
+cp themes/hugo-theme-windicss-starter/exampleSite/windi.config.js ./
 ```
 
 This introduces the dependencies WindiCSS Netlify will run the installation automatically on deploy, use: `npm run build`.
