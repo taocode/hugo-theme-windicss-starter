@@ -10,7 +10,7 @@ export default defineConfig({
     preflight: true, // Default CSS reset
     colors: {
       bg: 'var(--c-bg)',
-      bg2: 'var(--c-bg2)',
+      bga: 'var(--c-bga)',
       brand: 'var(--c-brand)',
       fg: 'var(--c-text)',
       code: 'var(--c-code)',

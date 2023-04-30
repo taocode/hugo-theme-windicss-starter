@@ -10,7 +10,7 @@
   --c-brand-light: #25b3f5;
   --c-bg: #fff;
   --c-bg-semi: rgba(255,255,255,0.8);
-  --c-bg2: #f3f5f7;
+  --c-bga: #f3f5f7;
   --c-scrollbar: theme('colors.gray.200');
   --c-white: #fff;
   --c-black: #000;
@@ -80,7 +80,7 @@ html.dark {
 
   --c-bg: #171717;
   --c-bg-semi: rgba(17,17,17,0.8);
-  --c-bg2: #222;
+  --c-bga: #222;
   --c-scrollbar: #333;
   --c-text: #f5f7fa;
   --c-text-light: #fff;
