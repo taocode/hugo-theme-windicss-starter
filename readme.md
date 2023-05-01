@@ -2,6 +2,8 @@
 
 Starter files for a Hugo theme with Windi CSS.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4a560ce-4be2-41f6-ba0c-9b9d3adcbef4/deploy-status)](https://app.netlify.com/sites/hugo-theme-windicss-starter/deploys)
+
 ## [✨Example Site💨 🔗](https://hugo-theme-windicss-starter.netlify.app/)
 
 - set up to use [Windi CSS](https://windicss.org) - v3.1+

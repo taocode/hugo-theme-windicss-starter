@@ -4,9 +4,9 @@
 name = "hugo-theme-windicss-starter"
 license = "MIT"
 licenselink = "https://github.com/taocode/hugo-theme-windicss-starter/blob/main/LICENSE"
-description = "A boilerplate starter theme using WindiCSS."
+description = "A boilerplate starter theme using UnoCSS."
 homepage = "https://github.com/taocode/hugo-theme-windicss-starter"
-tags = ["Hugo", "WindiCSS", "theme", "starter", "boilerplate"]
+tags = ["Hugo", "WindiCSS", "UnoCSS", "theme", "starter", "boilerplate"]
 features = []
 min_version = "0.69"
 
