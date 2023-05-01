@@ -7,6 +7,7 @@ function initMenuToggle() {
 }
 
 function initDarkMode() {
+  console.log('initDarkMode()')
   const rootClassList = document.documentElement.classList
   const lsThemeMode = localStorage.getItem('theme-mode')
   let darkMode = (lsThemeMode !== null) 

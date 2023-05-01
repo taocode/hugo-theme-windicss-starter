@@ -1,14 +1,14 @@
 theme = "hugo-theme-windicss-starter"
 languageCode = "en-us"
 baseurl = "https://example.com/"
-title = "Hugo WindiCSS Starter"
+title = "Hugo UnoCSS Starter"
 
 author = "Mark Jones"
 copyright = "Copyright © 2021, Mark Jones, all rights reserved."
 
 [params]
-    name = "Hugo WindiCSS Starter"
-    description = "A simple bootstraped theme for Hugo, build with WindiCSS."
+    name = "Hugo UnoCSS Starter"
+    description = "A simple bootstraped theme for Hugo, build with UnoCSS."
 
     github_user = "taocode"
     github_repo = "https://github.com/taocode/hugo-theme-windicss-starter"

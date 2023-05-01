@@ -1,0 +1,6 @@
+{{- $main := resources.Match "css/modules/*.css" | resources.Concat "css/main.css" -}}
+
+{{- if hugo.IsProduction }}
+{{ $main = $main | minify | fingerprint }}
+{{ end -}}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" {{- if hugo.IsProduction }} integrity="{{ $main.Data.Integrity }}" {{ end -}}>

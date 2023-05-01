@@ -1,0 +1,12 @@
+
+{{ $defines := dict "process.env.NODE_ENV" `"development"` }}
+
+{{ $opts := dict "targetPath" "js/site.js" "defines" $defines }}
+{{- $site := resources.Get "js/site.js" | js.Build $opts -}}
+{{- $js := slice $site | resources.Concat "js/prod.js"  -}}
+{{- if .Site.IsServer }}
+<script src='{{ $site.RelPermalink }}'></script>
+{{ else }}
+    {{- $js = $js | minify | fingerprint -}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ end -}}
