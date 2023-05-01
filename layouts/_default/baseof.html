@@ -2,9 +2,9 @@
 <html lang='{{ .Site.LanguageCode }}' class="dark">
     {{ partial "head.html" . }}
     <body class="flex flex-col min-h-screen bg-bg text-fg">
-        {{- partial "dev-size-indicator.html" . -}}
+        {{- partialCached "dev-size-indicator.html" . -}}
         {{- partial "header.html" . -}}
-        <main class="flex-1 prose mx-3 sm:prose-xl md:prose-2xl md:mx-auto md:px-4 mt-9">
+        <main class="flex-1 prose mx-3 md:mx-auto md:px-4 mt-9">
         {{- block "main" . }}{{- end }}
         </main>
         {{- partialCached "dev-parameters.html" . -}}
