@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, 
+import { defineConfig, presetIcons, 
   presetTypography, presetUno, presetWebFonts, 
   transformerDirectives, transformerVariantGroup } 
     from 'unocss'
@@ -73,13 +73,11 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        display: {
-          name: 'Comfortaa',
-          weights: [300,400,500,600,700],
-        },
+        display: 'Rubik',
         sans: 'Roboto',
       }
     }),
+    presetIcons(),
   ],
   transformers: [
     transformerDirectives(),
