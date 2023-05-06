@@ -40,9 +40,9 @@ I've tried enabling JIT mode to reduce CSS overhead and improve startup time, li
 
 For a 5 page site, this stack both builds for production and has development up and running in under 5 seconds!💨
 
-I've found UnoCSS to be faster than TailwindCSS, JIT or otherwise. UnoCSS adds some niceties too, including the group syntax (available via ) *md:(flex etc)* and *!lg:block (!important)* enhancements. The downside to using the UnoCSS enhancements is that you can't just switch to TailwindCSS without refactoring their use.
+I've found UnoCSS to be faster than WindiCSS which is generally faster than TailwindCSS, JIT or otherwise. Uno & Windi add some niceties too, including the group syntax (available via [UnoCSS Variant Groups Tranformer](https://unocss.dev/transformers/variant-group)) *md:flex md:etc* and *!lg:block (!important)* enhancements. The downside to using the Windi or Uno CSS enhancements is that you can't just switch to TailwindCSS without refactoring their use.
 
-I haven't kept up with Tailwind v3, so these comments may be only relevant to those older versions.
+I haven't kept up with Tailwind v3, so these comments may be only relevant to older versions.
 
 ## Example Site
 

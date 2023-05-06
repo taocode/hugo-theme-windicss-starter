@@ -1,11 +1,11 @@
 {
-  "name": "hugo-theme-unocss-starter",
+  "name": "hugo-theme-windicss-starter",
   "version": "1.0.0",
   "description": "A Hugo starter theme with UnoCSS",
   "main": "index.js",
   "scripts": {
-    "uno": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/unocss-starter/layouts/**/*.html\" -o \"assets/css/modules/_uno.css\"",
-    "uno:dev": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/unocss-starter/layouts/**/*.html\" --watch -o \"assets/css/modules/_uno.css\"",
+    "uno": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" -o \"assets/css/modules/_uno.css\"",
+    "uno:dev": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" --watch -o \"assets/css/modules/_uno.css\"",
     "hugo:dev": "hugo server -DF",
     "hugo": "hugo --gc --minify",
     "dev": "run-p uno:dev hugo:dev",
@@ -31,9 +31,9 @@
   "author": "taocode",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taocode/hugo-theme-unocss-starter/issues"
+    "url": "https://github.com/taocode/hugo-theme-windicss-starter/issues"
   },
-  "homepage": "https://github.com/taocode/hugo-unocss-starter#readme",
+  "homepage": "https://github.com/taocode/hugo-theme-windicss-starter#readme",
   "devDependencies": {
     "@unocss/cli": "^0.51.8",
     "npm-run-all": "^4.1.5",
