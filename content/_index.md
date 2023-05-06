@@ -1,19 +1,19 @@
 ---
 author: Mark Jones
 title: Hugo UnoCSS Starter
-date: 2021-05-15
+date: 2023-05-06
 description: Hugo Theme with Uno CSS CLI integration for lightning-fast builds.
 ---
 
-## 🌠UnoCSS⚡ Hugo Static Site💨
+## 🌠UnoCSS ⚡Hugo Static Site💨
 
 This is an upgrade from prior WindiCSS version (hence the project name). It was hybrid of [hugo-with-windicss](https://github.com/pontakornth/hugo-with-windicss) for WindiCSS CLI integration and [hugo-theme-tailwindcss-starter](https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter) for theme layouts and basic header+navigation.
 
-### Successor to WindiCSS 
+### UnoCSS: Apparent Heir and Successor to WindiCSS 
 
 *[WindiCSS is dead](https://windicss.org/posts/sunsetting.html). Long live [UnoCSS](https://unocss.dev/)!*
 
-[UnoCSS](https://unocss.dev/) replaces [WindiCSS](https://windicss.org/) and brings its whole atomic CSS advantages including many options and it's even faster than WindiCSS. This is all excellent quite excellent and exciting but now some of my sites that use WindiCSS based on this starter are outdated. I found [@goldcoders huno project using hugo and uno](https://github.com/goldcoders/huno) helpful and you may find tips there or that it's a better starting point for your project.
+[UnoCSS](https://unocss.dev/) replaces [WindiCSS](https://windicss.org/) and brings its whole atomic CSS advantages including many options and it's even faster than WindiCSS. This is exciting and excellent but now some of my sites that use WindiCSS based on this starter are outdated. I found [@goldcoders huno project using hugo and uno](https://github.com/goldcoders/huno) helpful and you may find tips there or that it's a better starting point for your project.
 
 Thanks to @pontakornth, @dirkolbrich and @goldcoders for sharing their work!
 
