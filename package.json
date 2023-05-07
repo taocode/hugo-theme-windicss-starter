@@ -34,6 +34,7 @@
   "bugs": {
     "url": "https://github.com/taocode/hugo-theme-windicss-starter/issues"
   },
+  "packageManager": "pnpm@7.13.4",
   "homepage": "https://github.com/taocode/hugo-theme-windicss-starter#readme",
   "devDependencies": {
     "@iconify-json/fe": "^1.1.6",
