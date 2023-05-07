@@ -7,13 +7,13 @@ description: Hugo Theme with Uno CSS CLI integration for lightning-fast builds.
 
 ## 🌠UnoCSS ⚡Hugo Static Site💨
 
-This is an upgrade from prior WindiCSS version (hence the project name). It was hybrid of [hugo-with-windicss](https://github.com/pontakornth/hugo-with-windicss) for WindiCSS CLI integration and [hugo-theme-tailwindcss-starter](https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter) for theme layouts and basic header+navigation.
+This UnoCSS upgrade used to be based on WindiCSS (hence the project name). It started life as a hybrid of [hugo-with-windicss](https://github.com/pontakornth/hugo-with-windicss) for WindiCSS CLI integration and [hugo-theme-tailwindcss-starter](https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter) for theme layouts and basic header+navigation.
 
 ### UnoCSS: Apparent Heir and Successor to WindiCSS 
 
 *[WindiCSS is dead](https://windicss.org/posts/sunsetting.html). Long live [UnoCSS](https://unocss.dev/)!*
 
-[UnoCSS](https://unocss.dev/) replaces [WindiCSS](https://windicss.org/) and brings its whole atomic CSS advantages including many options and it's even faster than WindiCSS. This is exciting and excellent but now some of my sites that use WindiCSS based on this starter are outdated. I found [@goldcoders huno project using hugo and uno](https://github.com/goldcoders/huno) helpful and you may find tips there or that it's a better starting point for your project.
+[UnoCSS](https://unocss.dev/) replaces [WindiCSS](https://windicss.org/) and brings its whole atomic CSS advantages and it's even faster than WindiCSS. This is excellent but now some of my sites that use WindiCSS based on this starter are outdated and I'd rather migrate them to UnoCSS that has a future. I found [@goldcoders huno project using hugo and uno](https://github.com/goldcoders/huno) helpful and you may find tips there or that it's a better starting point for your project.
 
 Thanks to @pontakornth, @dirkolbrich and @goldcoders for sharing their work!
 
@@ -34,10 +34,10 @@ I've tried enabling JIT mode to reduce CSS overhead and improve startup time, li
 ## Limitations
 
 - ***No @apply*** directives 😔 but check out [Uno CSS Shortcuts](https://unocss.dev/config/shortcuts) 😊
-  - Use [Directives transformer](https://unocss.dev/transformers/directives) to use @apply and @screen directives but tends to rewrite your CSS as currently configured. 
-- New pages or layout html may require a restart to catch the new file's class usage *(but that's like 3 seconds so...)*
+  - Use [Directives transformer](https://unocss.dev/transformers/directives) to use @apply and @screen directives but it expands the shortcuts in your CSS as currently configured. 
+- New pages or layout html *may* require a restart to catch the new file's class usage *(but that's like 3 seconds so...)*
 
-## *Speediest!*
+## The *Speediest!*
 
 For a 5 page site, this stack both builds for production and has development up and running in under 5 seconds!💨
 
