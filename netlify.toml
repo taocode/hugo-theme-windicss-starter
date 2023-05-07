@@ -5,3 +5,4 @@
 [build.environment]
   HUGO_VERSION = "0.80.0"
   NODE_VERSION = "18"
+  NPM_FLAGS="--prefix=/"

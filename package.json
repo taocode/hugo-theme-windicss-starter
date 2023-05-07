@@ -9,6 +9,7 @@
     "hugo:dev": "hugo server -DF",
     "hugo": "hugo --gc --minify",
     "dev": "run-p uno:dev hugo:dev",
+    "prebuild": "[[ $CI = true ]] && npx pnpm install --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "run-s uno hugo",
     "example": "run-p uno:example hugo:example",
     "uno:example": "unocss \"../layouts/**/*.html\" --watch -o \"../assets/css/modules/_uno.css\"",
