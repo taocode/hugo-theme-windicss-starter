@@ -2,14 +2,12 @@
   "name": "hugo-theme-windicss-starter",
   "version": "1.0.0",
   "description": "A Hugo starter theme with UnoCSS",
-  "main": "index.js",
   "scripts": {
     "uno": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" -o \"assets/css/modules/_uno.css\"",
     "uno:dev": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" --watch -o \"assets/css/modules/_uno.css\"",
     "hugo:dev": "hugo server -DF",
     "hugo": "hugo --gc --minify",
     "dev": "run-p uno:dev hugo:dev",
-    "prebuild": "[[ $CI = true ]] && npx pnpm install --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "run-s uno hugo",
     "example": "run-p uno:example hugo:example",
     "uno:example": "unocss \"../layouts/**/*.html\" --watch -o \"../assets/css/modules/_uno.css\"",
@@ -34,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/taocode/hugo-theme-windicss-starter/issues"
   },
-  "packageManager": "pnpm@7.13.4",
   "homepage": "https://github.com/taocode/hugo-theme-windicss-starter#readme",
   "devDependencies": {
     "@iconify-json/fe": "^1.1.6",
