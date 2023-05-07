@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "pnpm install -g @unocss/cli && pnpm install && pnpm run build"
+  command = "pnpm setup && pnpm install -g @unocss/cli && pnpm install && pnpm run build"
 
 [build.environment]
   HUGO_VERSION = "0.80.0"
