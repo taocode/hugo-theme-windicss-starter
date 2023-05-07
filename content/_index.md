@@ -21,6 +21,7 @@ Thanks to @pontakornth, @dirkolbrich and @goldcoders for sharing their work!
 
 - Dark Mode Toggle
 - A tiny bit of Javascript for dark mode toggle and to improve keyboard access to the mobile navigation toggle
+- Icons provided by [UnoCSS PresetIcons](https://unocss.dev/presets/icons)
 
 ## Why?
 
@@ -79,19 +80,21 @@ Try before you buy! [View on Netlify](https://hugo-theme-windicss-starter.netlif
 Paths are relative to the theme root
 
 - UnoCSS Config file: `exampleSite/uno.config.ts`
-  - `unocss` CLI generates: ./assets/css/modules/_uno.css
+  - `unocss` CLI generates: `assets/css/modules/_uno.css`
 - NPM Package: `exampleSite/package.json`
   - installs `unocss` (`pnpm install`)
   - provides scripts for `dev` and `build`
-- Site CSS: `assets/css/site.css`
+- Site CSS: `assets/css/modules/site.css`
   - Has Menu and Dark Mode toggle display directives
   - Place for any sitewide CSS 
-  - *no @apply* directives available with this CLI integration
-- CSS Variables: `assets/css/vars.css`
-  - Color variables added here to make dark mode shift a tidier
+    - *@apply* and *@screen* directives expand into CSS
+- CSS Variables: `assets/css/modules/_vars.css`
+  - Color and other CSS variables are added here to make dark mode shift tidier
 - Javascript: `assets/js/site.js`
   - Handles Dark Mode toggle, uses localStorage
   - Place any additional custom js here.
+
+`*.css` under assets/css/modules will be combined and delivered as 1 CSS file. UnoCSS will only expand @apply and @screen directives in `assets/css/modules/site.css` as configured.
 
 ## License
 
