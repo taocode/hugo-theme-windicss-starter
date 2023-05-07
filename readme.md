@@ -64,7 +64,7 @@ git init
 npm install
 ```
 
-- edit the `config.toml` file in project root (`/`) or `exampleSite/` to reflect the `new-theme-name`
+- edit the `config.toml` file in project root (`/`) or `exampleSite/` to reflect the `unocss-starter`
 
 ```toml
 # in config.toml
@@ -94,7 +94,7 @@ rm -rf .git
 npm install
 ```
 
-- edit the `config.toml` file in `new-site/` to reflect the new-theme-name
+- edit the `config.toml` file in `new-site/` to reflect the unocss-starter
 
 ```toml
 # in config.toml
