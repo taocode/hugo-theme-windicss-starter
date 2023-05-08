@@ -4,3 +4,5 @@
 .pnpm-debug.log
 # Local Netlify folder
 .netlify
+.hugo_build.lock
+assets/css/modules/_uno.css
