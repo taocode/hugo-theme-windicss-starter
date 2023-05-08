@@ -1,6 +1,7 @@
 [build]
   publish = "public"
-  command = "npm install && npm run build"
+  command = "npm install -g @unocss/cli && npm install && npm run build"
 
 [build.environment]
   HUGO_VERSION = "0.80.0"
+  NODE_VERSION = "18"

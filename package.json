@@ -1,8 +1,7 @@
 {
-  "name": "hugo-theme-unocss-starter",
+  "name": "hugo-theme-windicss-starter",
   "version": "1.0.0",
-  "description": "A Hugo starter theme with ~~Windi~~UnoCSS",
-  "main": "index.js",
+  "description": "A Hugo starter theme with UnoCSS",
   "scripts": {
     "uno": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" -o \"assets/css/modules/_uno.css\"",
     "uno:dev": "unocss \"layouts/**/*.html\" \"content/**/*.md\" \"assets/css/modules/site.css\" \"themes/hugo-theme-windicss-starter/layouts/**/*.html\" --watch -o \"assets/css/modules/_uno.css\"",
@@ -23,8 +22,8 @@
   },
   "keywords": [
     "hugo",
-    "unocss",
     "windicss",
+    "unocss",
     "template",
     "starter"
   ],
@@ -33,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/taocode/hugo-theme-windicss-starter/issues"
   },
-  "homepage": "https://github.com/taocode/hugo-windicss-starter#readme",
+  "homepage": "https://github.com/taocode/hugo-theme-windicss-starter#readme",
   "devDependencies": {
     "@iconify-json/fe": "^1.1.6",
     "@unocss/cli": "^0.51.8",
