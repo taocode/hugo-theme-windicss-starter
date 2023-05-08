@@ -1,12 +1,12 @@
 ---
 author: Mark Jones
 title: About
-date: 2021-05-13
+date: 2023-04-30
 description: A short description about me.
 keywords: [about, creator]
 type: about
 ---
 
-Hugo Starter Theme for WindiCSS.
+Hugo Starter Theme for UnoCSS.
 
 Made by [taocode](https://github.com/taocode/).

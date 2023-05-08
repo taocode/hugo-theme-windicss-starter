@@ -2,6 +2,7 @@
 public/
 hugo_stats.json
 .pnpm-debug.log
-**/assets/css/windi.css
 # Local Netlify folder
 .netlify
+.hugo_build.lock
+assets/css/modules/_uno.css
