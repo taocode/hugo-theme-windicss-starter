@@ -1,5 +1,0 @@
-resources/
-node_modules/
-public/
-.netlify/
-hugo_stats.json
