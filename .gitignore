@@ -1,5 +1,4 @@
 **/node_modules
-public/
 hugo_stats.json
 .pnpm-debug.log
 public
