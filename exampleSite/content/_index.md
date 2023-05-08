@@ -43,7 +43,7 @@ Try before you buy! [View on Netlify](https://hugo-theme-windicss-starter.netlif
 
 ## Installation
 
-1. Copy `windicss.config.js` and `package.json` from `exampleSite/` to project root (`/`)
+1. Copy `uno.config.ts` and `package.json` from `exampleSite/` to project root (`/`)
 1. Run `pnpm install` (or `yarn install` `npm install`) in project root
 
 
@@ -51,7 +51,7 @@ Try before you buy! [View on Netlify](https://hugo-theme-windicss-starter.netlif
 
 1. Copy (or rename) theme for customization: `cp themes/hugo-theme-windicss-starter themes/my-theme`
 1. Remove .git from copied theme: `rm -rf themes/my-theme/.git`
-1. Update `/windicss.config.js` and `/package.json` scripts: replace `hugo-theme-windicss-starter` with `my-theme`
+1. Update `/uno.config.ts` and `/package.json` scripts: replace `hugo-theme-windicss-starter` with `my-theme`
 
 ## Usage
 
@@ -63,7 +63,7 @@ Try before you buy! [View on Netlify](https://hugo-theme-windicss-starter.netlif
 
 Paths are relative to the theme root
 
-- WindiCSS Config file: `exampleSite/windicss.config.js`
+- WindiCSS Config file: `exampleSite/uno.config.ts`
   - `windicss` CLI generates: /themes/hugo-theme-windicss-starter/assets/css/windi.css
 - NPM Package: `exampleSite/package.json`
   - installs `windicss` (`pnpm install`)
