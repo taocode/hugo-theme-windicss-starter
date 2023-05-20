@@ -31,45 +31,39 @@ export default defineConfig({
       header: 'var(--shadow-header)',
       totop: 'var(--shadow-totop)',
     },
-    typography: {
-      DEFAULT: {
-        css: {
-          color: 'inherit',
-          '[class~="lead"]': {
-            color: 'var(--c-gray-700)',
-          },
-          a: {
-            color: 'inherit',
-            '&:hover': {
-              color: 'inherit',
-            },
-          }, 
-          strong: {
-            color: 'var(--c-gray-900)',
-          },
-          h1: {
-            color: 'var(--c-gray-900)',
-          },
-          h2: {
-            color: 'var(--c-gray-900)',
-          },
-          h3: {
-            color: 'var(--c-gray-900)',
-          },
-          h4: {
-            color: 'var(--c-gray-900)',
-          },
-          code: {
-            backgroundColor: 'var(--c-code-bg)',
-            color: 'var(--c-code)',
-          },
-        },
-      },
-    },
   },
   presets: [
     presetUno(),
-    presetTypography(),
+    presetTypography({
+      "[class~='lead']": {
+        color: 'var(--c-gray-700)',
+      },
+      a: {
+        color: 'inherit',
+        '&:hover': {
+          color: 'inherit',
+        },
+      }, 
+      strong: {
+        color: 'var(--c-gray-900)',
+      },
+      h1: {
+        color: 'var(--c-gray-900)',
+      },
+      h2: {
+        color: 'var(--c-gray-900)',
+      },
+      h3: {
+        color: 'var(--c-gray-900)',
+      },
+      h4: {
+        color: 'var(--c-gray-900)',
+      },
+      code: {
+        backgroundColor: 'var(--c-code-bg)',
+        color: 'var(--c-code)',
+      },
+    }),
     presetWebFonts({
       provider: 'google',
       fonts: {
