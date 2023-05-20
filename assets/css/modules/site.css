@@ -4,8 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* font-family:"Comfortaa"; */
-  font-family:"Rubik";
+  font-family:var(--font-family-display, "Rubik");
 }
 
 .prose {
@@ -36,10 +35,10 @@ input#show-menu:checked~button .menu-open {
 input#show-menu:checked~button .menu-close {
   display: block;
 }
-/* #nav-menu {
+/* #menu-top {
   @apply z-0 hidden;
 } */
-input#show-menu:checked~#nav-menu {
+input#show-menu:checked~#menu-top {
   z-index:20;
   display:flex;
   justify-content: center;
@@ -48,9 +47,14 @@ input#show-menu:checked~#nav-menu {
   transform: scaleY(1);
   opacity:1;
 }
-@media (min-width: 640px) {
-  #nav-menu {
-      transform: scaleY(1);
+@media (min-width: 768px) {
+  #menu-top {
+    transform: scaleY(1);
+    display: flex;
+  }
+  #menu-top nav ul {
+    display: flex;
+    gap: 1em;
   }
   [for="show-menu"] {
     display: none !important;

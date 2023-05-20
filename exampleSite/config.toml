@@ -4,17 +4,19 @@ baseurl = "https://example.com/"
 title = "Hugo UnoCSS Starter"
 
 author = "Mark Jones"
-copyright = "Copyright © 2021, Mark Jones, all rights reserved."
+copyright = "Copyright © 2023, Mark Jones, all rights reserved."
+
+sectionPagesMenu = 'main'
 
 [params]
-    name = "Hugo UnoCSS Starter"
-    description = "A simple bootstraped theme for Hugo, build with UnoCSS."
+  name = "Hugo UnoCSS Starter"
+  description = "A simple bootstraped theme for Hugo, build with UnoCSS."
 
-    github_user = "taocode"
-    github_repo = "https://github.com/taocode/hugo-theme-windicss-starter"
-    github_banner = true
+  github_user = "taocode"
+  github_repo = "https://github.com/taocode/hugo-theme-windicss-starter"
+  github_banner = true
 
-    favicon = "favicon.ico"
+  favicon = "favicon.ico"
 
 # syntax highlight settings
 [markup]
