@@ -1,12 +1,15 @@
-
+{{ $lazyload := resources.Get "js/lazyload.js" }}
+{{ $lazyload := $lazyload | resources.Minify }}
+{{ with $lazyload }}
+{{ $secureJS := . | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end }}
 {{ $defines := dict "process.env.NODE_ENV" `"development"` }}
-
-{{ $opts := dict "targetPath" "js/site.js" "defines" $defines }}
-{{- $site := resources.Get "js/site.js" | js.Build $opts -}}
-{{- $js := slice $site | resources.Concat "js/prod.js"  -}}
+{{ $opts_site := dict "targetPath" "js/site.js" "defines" $defines }}
+{{- $siteJS := resources.Get "js/site.js" | js.Build $opts_site -}}
 {{- if hugo.IsServer }}
-<script src='{{ $site.RelPermalink }}'></script>
+<script defer src="{{ $siteJS.RelPermalink }}"></script>
 {{ else }}
-    {{- $js = $js | minify | fingerprint -}}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{- $scripts := slice $siteJS | resources.Concat "js/scripts.js" | minify | fingerprint | resources.PostProcess -}}
+<script defer src="{{ $scripts.RelPermalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
 {{ end -}}
